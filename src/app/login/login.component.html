@@ -1,0 +1,24 @@
+<div class="card">
+<div class="container">
+
+<form [formGroup]="login" (ngSubmit)="logindata(login)" class="form-box">
+    <h1>LoginPage</h1>
+<div class="formGroup">
+    <label>User Email</label>
+    <input type="email" formControlName="email" class="form-control mb-3 mt-3" placeholder="Enter Email">
+</div>
+   <div class="formGroup"> 
+    <label> User Password</label>
+    <input type="password" formControlName="password" class="form-control mb-3 mt-3" placeholder="Enter Password">
+</div>
+<span>Create New Account <a routerLink="singup">Singup</a></span>
+<br><br>
+   <button type="submit" class="btn btn-success">Login</button>
+</form>
+</div>
+</div>
+
+
+
+   
+
