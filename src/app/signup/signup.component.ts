@@ -1,33 +1,29 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
-  selector: 'app-signup',
-  templateUrl: './signup.component.html',
-  styleUrl: './signup.component.css'
+   selector: 'app-signup',
+   templateUrl: './signup.component.html',
+   styleUrl: './signup.component.css'
 })
-export class SignupComponent {
-
-  
-   constractor(){}
-singup:FormGroup|any;
-ngOnInit(){
-   this.singup=new FormGroup({
-    "fname":new FormControl(),
-    "lname":new FormControl(),
-    "email":new FormControl(),
-    "password":new FormControl(),
-    "confirm password":new FormControl(),
-    "phone number":new FormControl(),
-
-   })
-}
- 
-   singupdata(singup:FormGroup){
-    
-      console.log(this.singup.value); 
-      alert("Signup Successfull") 
-      this.singup.reset();                      
-}
+export class SignupComponent implements OnInit {
+   signupForm: FormGroup | any;
+   constructor(private formBuilder: FormBuilder) { }
+   ngOnInit() {
+      this.signupForm = this.formBuilder.group({
+         firstName: ['', Validators.required],
+         lastName: ['', Validators.required],
+         email: ['', [Validators.required, Validators.email]],
+         password: ['', Validators.required],
+         confirmPassword: ['', [Validators.required]],
+         mobileNumber: ['', Validators.required]
+      });
+   }
+   submitForm() {
+      this.signupForm.valid
+      this.signupForm.reset();
+      return this.signupForm.value;
+   }
 }
