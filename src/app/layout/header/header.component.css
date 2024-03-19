@@ -1,6 +1,6 @@
 header{
     
-    border-bottom: 1px solid rgb(0, 0, 0);
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
     height: 58px;
     /* background-color: rgba(0, 255, 255, 0.37); */
    display: flex;  
@@ -11,7 +11,7 @@ header{
     width: 170px;
     height: 100px;
     position: relative;
-    top: -21px;
+    top: -22px;
 }
 
 #logo{
