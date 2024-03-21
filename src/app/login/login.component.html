@@ -27,15 +27,16 @@
                     <div *ngIf="login.get('confirmpassword').errors?.required">Confirmpassword is required.</div>
                     <!-- <div *ngIf="login.get('confirmpassword').errors?.passwordMismatch">Passwords do not match</div> -->
                 </div>
-                <button type="submit" [disabled]="login.invalid" class="btn btn-success">Login</button>
+                <button type="submit" [disabled]="login.invalid" class="btn btn-success"
+                    (click)="login03()">Login</button>
                 <br><br>
                 <span>Create New Account <a routerLink="singup">Sing Up</a></span>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ngx-toastr/toastr.css" />
             </div>
         </form>
     </div>
 </div>
-
-
+<img width="100%" height="50%" [src]="imageUrls[currentImageUrlIndex]">
 
    
 

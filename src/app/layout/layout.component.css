@@ -1,0 +1,17 @@
+aside{
+    /* border: 1px solid; */
+    width: 13%;
+    height: 100vh;
+}
+section{
+    /* border: 1px solid; */
+    position: absolute;
+    width: 87%;
+    height: 100vh;
+    left: 13%;
+}
+body{
+    position: relative;
+    background-color:#F5EEE6;
+
+}
