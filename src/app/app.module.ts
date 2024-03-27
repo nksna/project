@@ -8,12 +8,22 @@ import { ToastrModule } from 'ngx-toastr';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { LoginComponent } from './login/login.component';
+import { KidsComponent } from './kids/kids.component';
+import { MensComponent } from './mens/mens.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
+import { WomanComponent } from './woman/woman.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    KidsComponent,
+    MensComponent,
+    HeaderComponent,
+    NavBarComponent,
+    WomanComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,7 +31,8 @@ import { LoginComponent } from './login/login.component';
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    LayoutModule
  ],
   providers: [],
   bootstrap: [AppComponent]

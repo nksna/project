@@ -27,8 +27,7 @@
                     <div *ngIf="login.get('confirmpassword').errors?.required">Confirmpassword is required.</div>
                     <!-- <div *ngIf="login.get('confirmpassword').errors?.passwordMismatch">Passwords do not match</div> -->
                 </div>
-                <button type="submit" [disabled]="login.invalid" class="btn btn-success"
-                    (click)="login03()">Login</button>
+                <button type="submit" [disabled]="login.invalid" class="btn btn-success"(click)="login03()">Login</button>
                 <br><br>
                 <span>Create New Account <a routerLink="singup">Sing Up</a></span>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ngx-toastr/toastr.css" />
