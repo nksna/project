@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { KidsComponent } from './kids/kids.component';
+import { MensComponent } from './mens/mens.component';
+import { WomanComponent } from './woman/woman.component';
 
-const routes: Routes = [  {path:'',component:HomeComponent},
-  { path: 'layout', loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule) }];
+
+
+const routes: Routes = [{path:'login',component:LoginComponent},{path:'kids',component:KidsComponent},{path:'mens',component:MensComponent},{path:'woman',component:WomanComponent},
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

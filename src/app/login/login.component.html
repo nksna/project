@@ -1,0 +1,41 @@
+<div class="card">
+    <div class="container">
+        <form [formGroup]="login" (ngSubmit)="logindata(login)" class="form-box">
+            <h1>LoginPage</h1>
+            <div class="formGroup">
+                <label>User Email</label>
+                <input type="email" formControlName="email" name="email" class="form-control mb-3 mt-3"
+                    placeholder="Enter Email">
+                <div *ngIf="login.get('email').invalid && login.get('email').touched">
+                    <div *ngIf="login.get('email').errors?.required">Email is required.</div>
+                    <div *ngIf="login.get('email').errors?.email">Please enter a valid email address.</div>
+                </div>
+            </div>
+            <div class="formGroup">
+                <label> User Password</label>
+                <input type="password" formControlName="password" name="password" class="form-control mb-3 mt-3"
+                    placeholder="Enter Password">
+                <div *ngIf="login.get('password').invalid && login.get('password').touched">
+                    <div *ngIf="login.get('password').errors?.required">password is required.</div>
+                </div>
+            </div>
+            <div class="formGroup">
+                <label> Confirm Password</label>
+                <input type="password" name="confirmpassword" formControlName="confirmpassword"
+                    class="form-control mb-3 mt-3" placeholder="Enter Password">
+                <div *ngIf="login.get('confirmpassword').invalid && login.get('confirmpassword').touched">
+                    <div *ngIf="login.get('confirmpassword').errors?.required">Confirmpassword is required.</div>
+                    <!-- <div *ngIf="login.get('confirmpassword').errors?.passwordMismatch">Passwords do not match</div> -->
+                </div>
+                <button type="submit" [disabled]="login.invalid" class="btn btn-success"(click)="login03()">Login</button>
+                <br><br>
+                <span>Create New Account <a routerLink="singup">Sing Up</a></span>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ngx-toastr/toastr.css" />
+            </div>
+        </form>
+    </div>
+</div>
+<img width="100%" height="50%" [src]="imageUrls[currentImageUrlIndex]">
+
+   
+
