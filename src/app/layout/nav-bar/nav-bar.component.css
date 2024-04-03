@@ -1,32 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Parisienne&display=swap');
-
-.nav{
-    height: 50px;
-    display:flex; 
-    justify-content: space-around;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.081);
-    border-radius: 5px 0px 10px 0;
-    
-    
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', monospace;
+   
 }
-
-a{
-    padding-top: 11px;
-    width: 100%;
-    text-align: center;
+ul{
+    list-style: none;
+    background: #8c52ff;
+    align-items: center;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    align-items: center;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: white;
     text-decoration: none;
-    color: rgb(7, 6, 6);
-    justify-content: space-between;
-    font-family: "Parisienne", cursive;
-    font-weight: 600;
-    font-size: 25px;
-    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+    
 }
+ul li ul.dropdown li{
+    display: block;
 
-a:hover{
-    background-color:#EFBC9B;
-    color: #fdffff;
-    border-radius: 5px 50px 5px 50px;
-    text-shadow: 1px 1px black;
-    transition: all 0.7s ease;
+}
+ul li ul.dropdown{
+    width: 100px;
+    background: #3b3a3d;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    
+}
+ul li a:hover{
+    background: #6d30e9;
+    align-items: center;
+}
+ul li:hover ul.dropdown{
+    display: block;
+    align-items: center;
+}
+.nav{
+    align-items: center;
 }
