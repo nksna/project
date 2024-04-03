@@ -1,0 +1,55 @@
+<div class="card">
+  <div class="container">
+    <form [formGroup]="signupForm" (ngSubmit)="submitForm(signupForm)">
+      <h1>SignUp</h1><br>
+      <div class="formGroup">
+        <label>First Name</label>
+        <input type="text" formControlName="firstName" class="form-control mb-3 mt-3" placeholder="Enter First Name">
+        <div *ngIf="signupForm.get('firstName').invalid && signupForm.get('firstName').touched">
+          <div *ngIf="signupForm.get('firstName').errors?.required">First name is required.</div>
+        </div>
+      </div>
+      <div class="formGroup">
+        <label>Last Name</label>
+        <input type="text" formControlName="lastName" class="form-control mb-3 mt-3" placeholder="Last Name">
+        <div *ngIf="signupForm.get('lastName').invalid && signupForm.get('lastName').touched">
+          <div *ngIf="signupForm.get('lastName').errors?.required">Last name is required.</div>
+        </div>
+      </div>
+      <div class="formGroup">
+        <label>Email</label>
+        <input type="email" formControlName="email" class="form-control mb-3 mt-3" placeholder="Email">
+        <div *ngIf="signupForm.get('email').invalid && signupForm.get('email').touched">
+          <div *ngIf="signupForm.get('email').errors?.required">Email is required.</div>
+          <div *ngIf="signupForm.get('email').errors?.email">Please enter a valid email address.</div>
+        </div>
+      </div>
+      <div class="formGroup">
+        <label>Password</label>
+        <input type="password" formControlName="password" class="form-control mb-3 mt-3" placeholder="Password">
+        <div *ngIf="signupForm.get('password').invalid && signupForm.get('password').touched">
+          <div *ngIf="signupForm.get('password').errors?.required">Password is required.</div>
+        </div>
+      </div>
+      <div class="formGroup">
+        <label>confirmPassword</label>
+        <input type="password" formControlName="confirmPassword" class="form-control mb-3 mt-3"
+          placeholder="Confirm Password">
+        <div *ngIf="signupForm.get('confirmPassword').invalid && signupForm.get('confirmPassword').touched">
+          <div *ngIf="signupForm.get('confirmPassword').errors?.required">Confirm password is required.</div>
+          <div *ngIf="signupForm.get('confirmPassword').errors?.passwordMismatch">Passwords do not match.</div>
+        </div>
+      </div>
+      <div class="formGroup">
+        <label>Mobile Number</label>
+        <input type="text" formControlName="mobileNumber" class="form-control mb-3 mt-3" placeholder="Mobile Number">
+        <div *ngIf="signupForm.get('mobileNumber').invalid && signupForm.get('mobileNumber').touched">
+          <div *ngIf="signupForm.get('mobileNumber').errors?.required">Mobile number is required.</div>
+        </div>
+      </div>
+      <button type="submit" [disabled]="signupForm.invalid" class="btn btn-success" (click)="signup2()">Sign Up</button>
+    </form>
+    <a style="color: #fff; margin-top:10px" routerLink="/login">Already Register? Click to Login</a>
+  </div>
+</div>
+<img width="100%" height="50%" [src]="imageUrls[currentImageUrlIndex]">

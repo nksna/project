@@ -10,16 +10,16 @@ import { SectionComponent } from './section/section.component';
 
 @NgModule({
   declarations: [
-    LayoutComponent,
-    HeaderComponent,
-    NavBarComponent,
-    SideNavBarComponent,
-    SectionComponent
+<<<<<<< HEAD
+    
+=======
+   
+>>>>>>> 3724b18fe89ba83f966831ce34ba91a3f82ae7e7
   ],
   imports: [
     CommonModule,
     LayoutRoutingModule
   ],
-  exports: [LayoutComponent]
+  exports: []
 })
 export class LayoutModule { }
