@@ -13,6 +13,14 @@ aside{
     font-style: normal;
 }
 
+aside li:hover{
+    color: gray;
+    transition-property:color ;
+    transition-timing-function: linear;
+    transition:0.5s ;
+    cursor: pointer;
+}
+
 li{
     width: 100%;
     list-style: none;
