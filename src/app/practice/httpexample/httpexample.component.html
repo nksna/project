@@ -1,0 +1,28 @@
+<div>
+    <h1>Employee registration</h1>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>:</td>
+            <td><input type="text" [(ngModel)] = "name"></td>
+        </tr>
+        <tr>
+            <td>age</td>
+            <td>:</td>
+            <td><input type="number" [(ngModel)] = "age"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td><input type="email" [(ngModel)] = "email"></td>
+        </tr>
+        <tr>
+            <td>phn No</td>
+            <td>:</td>
+            <td><input type="text" [(ngModel)] = "phn"></td>
+        </tr>
+        <tr>
+            <td><button (click)="sendData()">Submit</button></td>
+        </tr>
+    </table>
+</div>
