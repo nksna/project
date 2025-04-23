@@ -13,7 +13,7 @@ aside{
     font-style: normal;
 }
 
-aside li:hover{
+aside h3:hover{
     color: gray;
     transition-property:color ;
     transition-timing-function: linear;
@@ -21,13 +21,10 @@ aside li:hover{
     cursor: pointer;
 }
 
-li{
-    width: 100%;
-    list-style: none;
-}
 
 h3{
     color:rgb(110, 110, 251);
+    padding: 20px 10px 30px 10px;
 }
 
 li:hover{
