@@ -1,14 +1,21 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 aside{
-    /* border: 1px solid; */
     width: 13%;
     height: 100vh;
+    position: fixed;
+    top:60px;
 }
 section{
-    /* border: 1px solid; */
     position: absolute;
     width: 87%;
     height: 100vh;
     left: 13%;
+    top: 60px;
+    z-index: -1;
 }
 body{
     position: relative;
