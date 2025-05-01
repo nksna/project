@@ -1,3 +1,665 @@
+
 {
-  "mca": []
+
+  "mca": [],
+
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does HTML stand for?",
+      "options": ["HyperText Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language"],
+      "answer": "HyperText Markup Language",
+      "course": "HTML",
+      "level": "Basic"
+    },
+    {
+      "id": 2,
+      "question": "What is the correct HTML element for inserting a line break?",
+      "options": ["<break>", "<br>", "<lb>"],
+      "answer": "<br>",
+      "course": "HTML",
+      "level": "Basic"
+    },
+    {
+      "id": 3,
+      "question": "Which property is used to change the background color in CSS?",
+      "options": ["color", "background-color", "bgcolor"],
+      "answer": "background-color",
+      "course": "CSS",
+      "level": "Basic"
+    },
+    {
+      "id": 4,
+      "question": "Which CSS property controls the text size?",
+      "options": ["font-style", "text-size", "font-size"],
+      "answer": "font-size",
+      "course": "CSS",
+      "level": "Basic"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is a JavaScript data type?",
+      "options": ["Float", "Boolean", "Decimal"],
+      "answer": "Boolean",
+      "course": "JavaScript",
+      "level": "Basic"
+    },
+    {
+      "id": 6,
+      "question": "Which keyword declares a variable in JavaScript?",
+      "options": ["var", "int", "dim"],
+      "answer": "var",
+      "course": "JavaScript",
+      "level": "Basic"
+    },
+    {
+      "id": 7,
+      "question": "Which decorator is used to define a component in Angular?",
+      "options": ["@NgModule", "@Injectable", "@Component"],
+      "answer": "@Component",
+      "course": "Angular",
+      "level": "Basic"
+    },
+
+    {
+      "id": 9,
+      "question": "Which tag is used to define a table header?",
+      "options": ["<thead>", "<th>", "<header>"],
+      "answer": "<th>",
+      "course": "HTML",
+      "level": "Intermediate"
+    },
+    {
+      "id": 10,
+      "question": "Which HTML5 element defines navigation links?",
+      "options": ["<nav>", "<navigate>", "<navigation>"],
+      "answer": "<nav>",
+      "course": "HTML",
+      "level": "Intermediate"
+    },
+    {
+      "id": 11,
+      "question": "What does the 'z-index' property in CSS do?",
+      "options": ["Controls opacity", "Controls layer stacking", "Controls zoom"],
+      "answer": "Controls layer stacking",
+      "course": "CSS",
+      "level": "Intermediate"
+    },
+    {
+      "id": 12,
+      "question": "Which CSS layout uses rows and columns?",
+      "options": ["Flexbox", "Grid", "Float"],
+      "answer": "Grid",
+      "course": "CSS",
+      "level": "Intermediate"
+    },
+    {
+      "id": 13,
+      "question": "What is a closure in JavaScript?",
+      "options": ["Function with global scope", "Function inside another function", "Function with private variables"],
+      "answer": "Function with private variables",
+      "course": "JavaScript",
+      "level": "Intermediate"
+    },
+    {
+      "id": 14,
+      "question": "How to convert a string to a number in JavaScript?",
+      "options": ["Number()", "parseNum()", "int()"],
+      "answer": "Number()",
+      "course": "JavaScript",
+      "level": "Intermediate"
+    },
+    {
+      "id": 15,
+      "question": "Which Angular service is used for routing?",
+      "options": ["Router", "Navigation", "RouteService"],
+      "answer": "Router",
+      "course": "Angular",
+      "level": "Intermediate"
+    },
+    {
+      "id": 16,
+      "question": "Which pipe is used to transform text to uppercase in Angular?",
+      "options": ["upperCase", "uppercase", "UpperCasePipe"],
+      "answer": "uppercase",
+      "course": "Angular",
+      "level": "Intermediate"
+    },
+    {
+      "id": 17,
+      "question": "What is semantic HTML?",
+      "options": ["HTML with CSS", "HTML with meaning", "HTML for scripting"],
+      "answer": "HTML with meaning",
+      "course": "HTML",
+      "level": "Advanced"
+    },
+    {
+      "id": 18,
+      "question": "What is the correct way to link a CSS file in HTML?",
+      "options": ["<style src='style.css'>", "<link rel='stylesheet' href='style.css'>", "<css>style.css</css>"],
+      "answer": "<link rel='stylesheet' href='style.css'>",
+      "course": "HTML",
+      "level": "Advanced"
+    },
+    {
+      "id": 19,
+      "question": "Which tag is used to create a dropdown list?",
+      "options": ["<dropdown>", "<select>", "<input type='dropdown'>"],
+      "answer": "<select>",
+      "course": "HTML",
+      "level": "Intermediate"
+    },
+    {
+      "id": 20,
+      "question": "Which tag defines a cell in a table?",
+      "options": ["<cell>", "<td>", "<tr>"],
+      "answer": "<td>",
+      "course": "HTML",
+      "level": "Intermediate"
+    },
+    {
+      "id": 21,
+      "question": "Which element is used to embed JavaScript code?",
+      "options": ["<js>", "<javascript>", "<script>"],
+      "answer": "<script>",
+      "course": "HTML",
+      "level": "Intermediate"
+    },
+    {
+      "id": 22,
+      "question": "Which tag is used to define a header cell in a table?",
+      "options": ["<head>", "<header>", "<th>"],
+      "answer": "<th>",
+      "course": "HTML",
+      "level": "Intermediate"
+    },
+    {
+      "id": 22,
+      "question": "What tag is used to define emphasized text?",
+      "options": ["<b>", "<i>", "<em>"],
+      "answer": "<em>",
+      "course": "HTML",
+      "level": "Advanced"
+    },
+    {
+      "id": 23,
+      "question": "What is the purpose of the <!DOCTYPE html> declaration?",
+      "options": ["To define HTML version", "To style the page", "To load external CSS"],
+      "answer": "To define HTML version",
+      "course": "HTML",
+      "level": "Advanced"
+    },
+    {
+      "id": 24,
+      "question": "What does the 'target=\"_blank\"' attribute do in an anchor tag?",
+      "options": ["Opens link in new tab", "Opens link in same tab", "Downloads the file"],
+      "answer": "Opens link in new tab",
+      "course": "HTML",
+      "level": "Advanced"
+    },
+    {
+      "id": 25,
+      "question": "Which HTML element is used to specify a footer for a document?",
+      "options": ["<bottom>", "<footer>", "<section>"],
+      "answer": "<footer>",
+      "course": "HTML",
+      "level": "Advanced"
+    },
+    {
+      "id": 26,
+      "question": "Which tag is used to embed a video in HTML5?",
+      "options": ["<media>", "<video>", "<movie>"],
+      "answer": "<video>",
+      "course": "HTML",
+      "level": "Advanced"
+    },
+    {
+      "id": 27,
+      "question": "Which HTML element is used to play audio files?",
+      "options": ["<sound>", "<music>", "<audio>"],
+      "answer": "<audio>",
+      "course": "HTML",
+      "level": "Advanced"
+    },
+    {
+      "id": 28,
+      "question": "What is the use of the <meta> tag in HTML?",
+      "options": ["To link stylesheets", "To define metadata", "To create buttons"],
+      "answer": "To define metadata",
+      "course": "HTML",
+      "level": "Advanced"
+    },
+    {
+      "id": 29,
+      "question": "What is event bubbling in JavaScript?",
+      "options": ["Event stops at the target", "Event starts from root", "Event propagates from target to parent"],
+      "answer": "Event propagates from target to parent",
+      "course": "JavaScript",
+      "level": "Advanced"
+    },
+    {
+      "id": 30,
+      "question": "What is a reactive form in Angular?",
+      "options": ["Form based on template", "Form using FormGroup and FormControl", "Form using ngModel"],
+      "answer": "Form using FormGroup and FormControl",
+      "course": "Angular",
+      "level": "Advanced"
+    },
+    {
+        "id": 31,
+        "question": "What is Angular primarily used for?",
+        "options": ["Data Science", "Mobile Apps", "Building Web Applications"],
+        "answer": "Building Web Applications",
+        "course": "Angular",
+        "level": "Basic"
+      },
+  
+      {
+        "id": 33,
+        "question": "What directive is used for conditional rendering?",
+        "options": ["*ngFor", "*ngIf", "*ngSwitch"],
+        "answer": "*ngIf",
+        "course": "Angular",
+        "level": "Basic"
+      },
+      {
+        "id": 34,
+        "question": "How do you bind a variable to an input in Angular?",
+        "options": ["[value]", "(value)", "{{value}}"],
+        "answer": "[value]",
+        "course": "Angular",
+        "level": "Basic"
+      },
+      {
+        "id": 35,
+        "question": "Which file is the root module of an Angular app?",
+        "options": ["main.ts", "app.component.ts", "app.module.ts"],
+        "answer": "app.module.ts",
+        "course": "Angular",
+        "level": "Basic"
+      },
+      {
+        "id": 36,
+        "question": "What is data binding in Angular?",
+        "options": ["Connecting data between database and UI", "Connecting data between component and template", "Connecting backend and frontend"],
+        "answer": "Connecting data between component and template",
+        "course": "Angular",
+        "level": "Intermediate"
+      },
+      {
+        "id": 37,
+        "question": "What is the purpose of services in Angular?",
+        "options": ["UI logic", "Component structure", "Reusable business logic and data fetching"],
+        "answer": "Reusable business logic and data fetching",
+        "course": "Angular",
+        "level": "Intermediate"
+      },
+      {
+        "id": 38,
+        "question": "How do you define a route in Angular?",
+        "options": ["In app.routes.ts", "Using RouterModule.forRoot()", "Using @Component()"],
+        "answer": "Using RouterModule.forRoot()",
+        "course": "Angular",
+        "level": "Intermediate"
+      },
+      {
+        "id": 39,
+        "question": "What lifecycle hook is called after the component is initialized?",
+        "options": ["ngOnDestroy", "ngOnInit", "ngAfterViewInit"],
+        "answer": "ngOnInit",
+        "course": "Angular",
+        "level": "Intermediate"
+      },
+      {
+        "id": 40,
+        "question": "What is dependency injection in Angular?",
+        "options": ["Importing files", "Providing data manually", "Supplying a class with dependencies it needs"],
+        "answer": "Supplying a class with dependencies it needs",
+        "course": "Angular",
+        "level": "Intermediate"
+      },
+      {
+        "id": 41,
+        "question": "What does the async pipe do in Angular?",
+        "options": ["Pauses the component", "Automatically subscribes to Observables", "Formats dates"],
+        "answer": "Automatically subscribes to Observables",
+        "course": "Angular",
+        "level": "Advanced"
+      },
+      {
+        "id": 42,
+        "question": "What is the purpose of NgModules?",
+        "options": ["To compile code", "To organize an application into cohesive blocks", "To install packages"],
+        "answer": "To organize an application into cohesive blocks",
+        "course": "Angular",
+        "level": "Advanced"
+      },
+      {
+        "id": 43,
+        "question": "What is ChangeDetectionStrategy.OnPush used for?",
+        "options": ["Better animations", "Manual routing", "Improving performance by limiting change detection"],
+        "answer": "Improving performance by limiting change detection",
+        "course": "Angular",
+        "level": "Advanced"
+      },
+      {
+        "id": 44,
+        "question": "What is the purpose of guards in Angular routing?",
+        "options": ["Protect routes from being accessed without conditions", "Change styling", "Handle forms"],
+        "answer": "Protect routes from being accessed without conditions",
+        "course": "Angular",
+        "level": "Advanced"
+      },
+      {
+        "id": 45,
+        "question": "What is NgRx in Angular?",
+        "options": ["A testing tool", "A state management library", "A routing module"],
+        "answer": "A state management library",
+        "course": "Angular",
+        "level": "Advanced"
+      },
+      {
+        "id": 46,
+        "question": "Which property makes an element float to the right?",
+        "options": ["position: right", "float: right", "align: right"],
+        "answer": "float: right",
+        "course": "CSS",
+        "level": "Intermediate"
+      },
+      {
+        "id": 47,
+        "question": "What does 'z-index' control?",
+        "options": ["Zoom level", "Stacking order", "Box size"],
+        "answer": "Stacking order",
+        "course": "CSS",
+        "level": "Intermediate"
+      },
+      {
+        "id": 48,
+        "question": "Which property is used to hide an element without deleting it?",
+        "options": ["display: none", "opacity: 0", "visibility: hidden"],
+        "answer": "visibility: hidden",
+        "course": "CSS",
+        "level": "Intermediate"
+      },
+      {
+        "id": 49,
+        "question": "What does 'inherit' do in CSS?",
+        "options": ["Ignores styles", "Uses browser default", "Inherits property from parent"],
+        "answer": "Inherits property from parent",
+        "course": "CSS",
+        "level": "Advanced"
+      },
+      {
+        "id": 50,
+        "question": "Which CSS feature allows responsive designs?",
+        "options": ["@import", "@media", "@font-face"],
+        "answer": "@media",
+        "course": "CSS",
+        "level": "Advanced"
+      },
+      {
+        "id": 51,
+        "question": "How do you apply styles to every element in the document?",
+        "options": ["*", "all", "document"],
+        "answer": "*",
+        "course": "CSS",
+        "level": "Advanced"
+      },
+      {
+        "id": 52,
+        "question": "What is the default position value of an element?",
+        "options": ["static", "relative", "absolute"],
+        "answer": "static",
+        "course": "CSS",
+        "level": "Advanced"
+      },
+      {
+        "id": 53,
+        "question": "Which property adds shadow to text?",
+        "options": ["text-shadow", "font-shadow", "box-shadow"],
+        "answer": "text-shadow",
+        "course": "CSS",
+        "level": "Advanced"
+      },
+      {
+        "id": 54,
+        "question": "Which value of position keeps the element fixed in the same spot?",
+        "options": ["absolute", "fixed", "relative"],
+        "answer": "fixed",
+        "course": "CSS",
+        "level": "Advanced"
+      },
+      {
+        "id": 55,
+        "question": "Which pseudo-class targets the first child of a parent?",
+        "options": [":hover", ":first-child", ":nth-child(1)"],
+        "answer": ":first-child",
+        "course": "CSS",
+        "level": "Advanced"
+      },
+      
+        {
+          "id": 56,
+          "question": "What is a closure in JavaScript?",
+          "options": ["Function inside a loop", "Function having access to its outer function scope", "Function with no arguments"],
+          "answer": "Function having access to its outer function scope",
+          "course": "JavaScript",
+          "level": "Advanced"
+        },
+        {
+          "id": 57,
+          "question": "Which method converts a JSON string to a JavaScript object?",
+          "options": ["JSON.parse()", "JSON.stringify()", "JSON.objectify()"],
+          "answer": "JSON.parse()",
+          "course": "JavaScript",
+          "level": "Basic"
+        },
+        {
+          "id": 58,
+          "question": "Which keyword is used to declare a constant in JavaScript?",
+          "options": ["let", "const", "var"],
+          "answer": "const",
+          "course": "JavaScript",
+          "level": "Basic"
+        },
+        {
+          "id": 59,
+          "question": "What will `typeof null` return in JavaScript?",
+          "options": ["null", "object", "undefined"],
+          "answer": "object",
+          "course": "JavaScript",
+          "level": "Intermediate"
+        },
+        {
+          "id": 60,
+          "question": "What is the purpose of the `bind()` method?",
+          "options": ["To call a function", "To copy a function", "To set `this` value in a function"],
+          "answer": "To set `this` value in a function",
+          "course": "JavaScript",
+          "level": "Intermediate"
+        },
+        {
+          "id": 61,
+          "question": "What is the result of `2 + '2'` in JavaScript?",
+          "options": ["4", "'22'", "NaN"],
+          "answer": "'22'",
+          "course": "JavaScript",
+          "level": "Intermediate"
+        },
+        {
+          "id": 62,
+          "question": "Which symbol is used for strict equality check?",
+          "options": ["==", "===", "!="],
+          "answer": "===",
+          "course": "JavaScript",
+          "level": "Basic"
+        },
+        {
+          "id": 63,
+          "question": "Which array method is used to remove the last item from an array?",
+          "options": ["pop()", "shift()", "splice()"],
+          "answer": "pop()",
+          "course": "JavaScript",
+          "level": "Basic"
+        },
+        {
+          "id": 64,
+          "question": "What is the difference between `let` and `var`?",
+          "options": ["No difference", "`let` has block scope, `var` does not", "`var` is better"],
+          "answer": "`let` has block scope, `var` does not",
+          "course": "JavaScript",
+          "level": "Intermediate"
+        },
+        {
+          "id": 65,
+          "question": "What is the output of `[] + []`?",
+          "options": ["0", "undefined", "'' (empty string)"],
+          "answer": "'' (empty string)",
+          "course": "JavaScript",
+          "level": "Advanced"
+        },
+        
+          {
+            "id": 66,
+            "question": "What does Angular use for two-way data binding?",
+            "options": ["[()]", "{{}}", "[]"],
+            "answer": "[()]",
+            "course": "Angular",
+            "level": "Intermediate"
+          },
+          {
+            "id": 67,
+            "question": "What is the purpose of `ngOnInit()`?",
+            "options": ["Initialize module", "Initialize component after constructor", "Destroy component"],
+            "answer": "Initialize component after constructor",
+            "course": "Angular",
+            "level": "Intermediate"
+          },
+          {
+            "id": 68,
+            "question": "Which command creates a new Angular component?",
+            "options": ["ng generate component", "ng new component", "ng create component"],
+            "answer": "ng generate component",
+            "course": "Angular",
+            "level": "Basic"
+          },
+          {
+            "id": 69,
+            "question": "What is the purpose of `RouterModule`?",
+            "options": ["Routing between components", "Form validation", "Service injection"],
+            "answer": "Routing between components",
+            "course": "Angular",
+            "level": "Intermediate"
+          },
+ 
+          {
+            "id": 72,
+            "question": "How do you pass data from parent to child in Angular?",
+            "options": ["@Output", "@Input", "ViewChild"],
+            "answer": "@Input",
+            "course": "Angular",
+            "level": "Intermediate"
+          },
+          {
+            "id": 73,
+            "question": "Which Angular lifecycle hook is used just before destroying the component?",
+            "options": ["ngOnInit", "ngAfterViewInit", "ngOnDestroy"],
+            "answer": "ngOnDestroy",
+            "course": "Angular",
+            "level": "Advanced"
+          },
+          {
+            "id": 74,
+            "question": "What is the difference between reactive and template-driven forms?",
+            "options": ["No difference", "Reactive forms use FormGroup", "Template-driven is more scalable"],
+            "answer": "Reactive forms use FormGroup",
+            "course": "Angular",
+            "level": "Advanced"
+          },
+          {
+            "id": 75,
+            "question": "What is the use of `HttpClientModule`?",
+            "options": ["Route guards", "Form validation", "Perform HTTP requests"],
+            "answer": "Perform HTTP requests",
+            "course": "Angular",
+            "level": "Intermediate"
+          } ,
+          {
+            "id": 76,
+            "question": "1.Create a Resume Page Create a simple HTML resume with sections: Header, About Me, Skills (as a list), and Contact Info.",
+            "course": "HTML",
+            
+            "level": "Program"
+          },
+          {
+            "id": 77,
+            "question": "2.Form with Validation Attributes Build a registration form using <form> that includes inputs for name, email, password, and uses required, minlength, and type validation.",
+            "course": "HTML",
+            "level": "Program"
+          },
+          {
+            "id": 78,
+            "question": "3.Build a Table with Rowspan and Colspan Create a class schedule table using <table> with correct usage of rowspan and colspan.",
+            "course": "HTML",
+            "level": "Program"
+          },
+          {
+            "id": 79,
+            "question": "1.Center a Box in the Screen",
+            "course": "CSS",
+            "level": "Program"
+          },
+          {
+            "id": 80,
+            "question": "2.Responsive Navbar",
+            "course": "CSS",
+            "level": "Program"
+          },
+          {
+            "id": 81,
+            "question": "3.Card Hover Effect",
+            "course": "CSS",
+            "level": "Program"
+          },
+          {
+            "id": 82,
+            "question": " 1.To-Do List",
+            "course": "JavaScript",
+            "level": "Program"
+          },
+          {
+            "id": 83,
+            "question": "2.Countdown Timer",
+            "course": "JavaScript",
+            "level": "Program"
+          },
+          {
+            "id": 84,
+            "question": "3.Digital Clock",
+            "course": "JavaScript",
+            "level": "Program"
+          },
+          {
+            "id": 85,
+            "question": "1.Two-Way Binding with Input",
+            "course": "Angular",
+            "level": "Program"
+          },
+          {
+            "id": 86,
+            "question": "2.Role-Based Route Protection",
+            "course": "Angular",
+            "level": "Program"
+          },
+          {
+            "id": 87,
+            "question": "3.Dynamic Form with ReactiveForms",
+            "course": "Angular",
+            "level": "Program"
+          }
+      
+    ]
+    
+  
 }

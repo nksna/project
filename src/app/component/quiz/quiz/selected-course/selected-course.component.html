@@ -1,0 +1,49 @@
+  <div *ngIf="!isTimeUp">
+    <h3 *ngIf="selectedLevel !== 'Program'">Time Left: {{ formattedTime }}</h3>
+
+
+  <div>
+    <label for="course">Select Course:</label>
+    <select id="course" [(ngModel)]="selectedCourse" (change)="filterQuestions()">
+      <option value="">-- Select --</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Angular">Angular</option>
+    </select>
+
+    <label for="level">Select Level:</label>
+    <select id="level" [(ngModel)]="selectedLevel" (change)="filterQuestions()">
+      <option value="">-- Select --</option>
+      <option value="Basic">Basic</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="Advanced">Advanced</option>
+      <option value="Program">Program</option>
+    </select>
+  </div>
+
+  <div *ngIf="selectedCourse && selectedLevel && filteredQuestions.length > 0" >
+    <h3>{{ filteredQuestions[currentQuestionIndex].question }}</h3>
+    <div *ngFor="let option of filteredQuestions[currentQuestionIndex].options">
+      <input type="radio" [(ngModel)]="userAnswers[filteredQuestions[currentQuestionIndex].id]"[value]="option"
+      /> {{ option }}
+    </div>
+
+    <button (click)="prevQuestion()" [disabled]="currentQuestionIndex === 0">Previous</button>
+    <button (click)="nextQuestion()" [disabled]="currentQuestionIndex === filteredQuestions.length - 1">Next</button>
+  </div>
+</div>
+
+<div *ngIf="isTimeUp " class="score">
+
+<p *ngIf="selectedCourse !== 'Program'">
+    Your final score: {{ score }} out of {{ filteredQuestions.length }}
+  </p>
+</div>
+<button 
+  *ngIf="selectedLevel !== 'Program' && !submitted && !isTimeUp" 
+  (click)="submitQuiz()" 
+  [disabled]="!filteredQuestions.length">
+  Submit
+</button>
+

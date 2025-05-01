@@ -5,7 +5,8 @@ import { LayoutComponent } from './layout.component';
 const routes: Routes = [
   { path: '', component: LayoutComponent,
     children:[
-      {path:'course',loadChildren:()=> import('../../app/component/course/course.module').then((m)=>m.CourseModule)}
+      {path:'course',loadChildren:()=> import('../../app/component/course/course.module').then((m)=>m.CourseModule)},
+      {path:'quiz' ,loadChildren:()=> import('../../app/component/quiz/quiz.module').then((m)=> m.QuizModule)}
     ]
    },
   

@@ -9,10 +9,17 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { PracticeModule } from './practice/practice.module';
 import { LoginComponent } from './auth/login/login.component';
+import { QuizModule } from './component/quiz/quiz.module';
+import { FormsModule } from '@angular/forms';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+
+  
   ],
   imports: [
     BrowserModule,
@@ -21,7 +28,10 @@ import { LoginComponent } from './auth/login/login.component';
    MatButtonModule,
    MatMenuModule,
    MatToolbarModule,
-   PracticeModule
+   PracticeModule,
+   QuizModule,
+   FormsModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
