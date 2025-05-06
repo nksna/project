@@ -11,6 +11,7 @@ import { SelectedCourseComponent } from './quiz/selected-course/selected-course.
 @NgModule({
   declarations: [
    SelectedCourseComponent, 
+   
   ],
   imports: [
     CommonModule,
