@@ -70,29 +70,28 @@ export class SelectedCourseComponent {
   }
 
   filterQuestions() {
-    if (this.selectedCourse && this.selectedLevel) {
-      localStorage.setItem('selectedCourse', this.selectedCourse);
-      localStorage.setItem('selectedLevel', this.selectedLevel);
-  
-      this.filteredQuestions = this.allQuestions.filter(q =>
-        q.course === this.selectedCourse && q.level === this.selectedLevel
-      );
-  
-      this.submitted = false;
-      this.score = 0;
-      this.userAnswers = {};
-      this.currentQuestionIndex = 0;
-      this.isTimeUp = false;
-      this.timeLeft = this.totalTime;
-  
-      // ✅ Only start timer if not Program level
-      if (!this.quizStarted && this.filteredQuestions.length > 0 && this.selectedLevel !== 'Program') {
-        this.quizStarted = true;
-        this.startTimer();
-      }
+    console.log("Selected Course:", this.selectedCourse);
+    console.log("Selected Level:", this.selectedLevel);
+    console.log("All Questions:", this.allQuestions);
+
+    this.filteredQuestions = this.allQuestions.filter(q =>
+      (this.selectedCourse === '' || q.course === this.selectedCourse) &&
+      (this.selectedLevel === '' || q.level === this.selectedLevel)
+    );
+
+    console.log("Filtered Questions:", this.filteredQuestions);
+
+    this.submitted = false;
+    this.score = 0;
+    this.userAnswers = {};
+    this.currentQuestionIndex = 0;
+    
+
+    if (this.selectedCourse && this.selectedLevel && !this.quizStarted) {
+      this.quizStarted = true;
+      this.startTimer();
     }
   }
-  
 
   submitQuiz() {
     this.isTimeUp = true;
@@ -111,6 +110,8 @@ export class SelectedCourseComponent {
     const seconds = this.timeLeft % 60;
     return `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
   }
- 
+  redirectTo(){
+    this.route.navigate(['/layout'])
+  }
  
 }

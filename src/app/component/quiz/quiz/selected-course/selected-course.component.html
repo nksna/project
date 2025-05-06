@@ -1,6 +1,5 @@
   <div *ngIf="!isTimeUp">
-    <h3 *ngIf="selectedLevel !== 'Program'">Time Left: {{ formattedTime }}</h3>
-
+  <h3>Time Left: {{ formattedTime }}</h3>
 
   <div>
     <label for="course">Select Course:</label>
@@ -34,16 +33,16 @@
   </div>
 </div>
 
-<div *ngIf="isTimeUp " class="score">
+<div *ngIf="isTimeUp ">
 
 <p *ngIf="selectedCourse !== 'Program'">
     Your final score: {{ score }} out of {{ filteredQuestions.length }}
   </p>
 </div>
+
 <button 
-  *ngIf="selectedLevel !== 'Program' && !submitted && !isTimeUp" 
+  *ngIf="selectedLevel !== 'Program'" 
   (click)="submitQuiz()" 
-  [disabled]="!filteredQuestions.length">
+  [disabled]="isTimeUp || !filteredQuestions.length">
   Submit
 </button>
-

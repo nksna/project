@@ -11,6 +11,7 @@ import { PracticeModule } from './practice/practice.module';
 import { LoginComponent } from './auth/login/login.component';
 import { QuizModule } from './component/quiz/quiz.module';
 import { FormsModule } from '@angular/forms';
+import { CountryComponent } from './country/country.component';
 
 
 
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     LoginComponent,
+    CountryComponent,
 
   
   ],
