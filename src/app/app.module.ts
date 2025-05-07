@@ -9,6 +9,9 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { PracticeModule } from './practice/practice.module';
 import { LoginComponent } from './auth/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,7 @@ import { LoginComponent } from './auth/login/login.component';
    MatButtonModule,
    MatMenuModule,
    MatToolbarModule,
-   PracticeModule
+   PracticeModule,ReactiveFormsModule,RouterModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
