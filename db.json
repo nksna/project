@@ -1,3 +1,601 @@
 {
-  "mca": []
+  "mca": [{}],
+  "angular-courses": [
+    {
+      "id": 1,
+      "title": "Angular Basics",
+      "description": "Introduction to Angular framework.",
+      "duration": "5 hours",
+      "image": "assets/course3.jpg",
+      "questions": [
+        {
+          "q": "What is Angular?",
+          "a": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. It is maintained by Google."
+        },
+        {
+          "q": "What is a component in Angular?",
+          "a": "A component controls a patch of the screen called a view. It consists of a TypeScript class, an HTML template, and a CSS stylesheet."
+        },
+        {
+          "q": "What are directives in Angular?",
+          "a": "Directives are classes that add additional behavior to elements in your Angular applications. Angular provides structural and attribute directives."
+        },
+        {
+          "q": "What is data binding in Angular?",
+          "a": "Data binding is the mechanism to coordinate parts of a template with parts of a component. It can be one-way or two-way."
+        },
+        {
+          "q": "What is a service in Angular?",
+          "a": "A service is a class that provides specific functionality, often used for logic that is not directly related to views, like data fetching or business logic."
+        }
+      ]
+    
+    },
+    {
+      "id": 2,
+      "title": "Advanced Angular",
+      "description": "Deep dive into Angular topics.",
+      "duration": "8 hours",
+      "image": "assets/course2.jpg",
+      "questions": [
+        {
+          "q": "What is the purpose of ChangeDetectionStrategy.OnPush?",
+          "a": "It tells Angular to check for changes only when input references change, improving performance."
+        },
+        {
+          "q": "How do you optimize performance in large Angular apps?",
+          "a": "Use lazy loading, OnPush strategy, trackBy with *ngFor, and avoid unnecessary DOM updates."
+        },
+        {
+          "q": "What is the difference between BehaviorSubject and Subject?",
+          "a": "BehaviorSubject holds the latest value and emits it to new subscribers; Subject doesn't hold a value."
+        },
+        {
+          "q": "How does Angular handle dependency injection?",
+          "a": "Angular uses a hierarchical injector system and decorators like @Injectable() and @Inject()."
+        },
+        {
+          "q": "What is a resolver in Angular routing?",
+          "a": "A resolver fetches data before navigating to a route, ensuring the component has needed data upfront."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "React Essentials",
+      "description": "Learn the core concepts of React.",
+      "duration": "6 hours",
+      "image": "assets/course3.jpg",
+      "questions": [
+  {
+    "q": "What is React?",
+    "a": "React is a JavaScript library for building user interfaces, developed by Facebook. It uses a component-based architecture."
+  },
+  {
+    "q": "What is the Virtual DOM?",
+    "a": "The Virtual DOM is a lightweight copy of the real DOM that React uses to optimize rendering by updating only what has changed."
+  },
+  {
+    "q": "What is JSX?",
+    "a": "JSX is a syntax extension for JavaScript that lets you write HTML-like code in React components."
+  },
+  {
+    "q": "What's the difference between props and state?",
+    "a": "Props are passed from parent to child and are read-only. State is local to a component and can change over time."
+  },
+  {
+    "q": "What are hooks in React?",
+    "a": "Hooks like useState and useEffect let you use state and lifecycle features in functional components."
+  },
+  {
+    "q": "What is useEffect used for?",
+    "a": "useEffect handles side effects like data fetching, subscriptions, and manually updating the DOM after render."
+  },
+  {
+    "q": "How do you lift state up in React?",
+    "a": "You move shared state to the closest common ancestor component and pass it down via props."
+  }
+]
+
+    },
+    {
+      "id": 4,
+      "title": "Vue.js Fundamentals",
+      "description": "Beginner's guide to Vue.js.",
+      "duration": "4 hours",
+      "image": "assets/course4.jpg",
+      "questions": [
+  {
+    "q": "What is Vue.js?",
+    "a": "Vue.js is a progressive JavaScript framework for building user interfaces. It's designed to be incrementally adoptable and focuses on the view layer."
+  },
+  {
+    "q": "What is the Vue instance?",
+    "a": "The Vue instance is the root of every Vue application. It's an object that manages the data, methods, and lifecycle of the app."
+  },
+  {
+    "q": "What are components in Vue.js?",
+    "a": "Components are reusable building blocks in Vue.js that allow for encapsulation of logic, HTML, and CSS. They can be defined globally or locally in the component hierarchy."
+  },
+  {
+    "q": "What is the role of `v-bind` in Vue.js?",
+    "a": "`v-bind` is used to dynamically bind an attribute to an expression. It allows you to bind HTML attributes like `href`, `class`, and `src` to Vue data."
+  },
+  {
+    "q": "What is the Vue.js lifecycle hook `mounted`?",
+    "a": "`mounted` is a lifecycle hook that is called after the Vue instance has been mounted to the DOM. It's often used for initializing components, making API calls, and setting up listeners."
+  }
+]
+
+    },
+    {
+      "id": 5,
+      "title": "JavaScript Deep Dive",
+      "description": "Explore advanced JavaScript concepts.",
+      "duration": "10 hours",
+      "image": "assets/course5.jpg",
+      "questions": [
+  {
+    "q": "What are closures in JavaScript?",
+    "a": "Closures are functions that 'remember' the scope in which they were created, even when invoked outside that scope. This allows inner functions to access variables from the outer function."
+  },
+  {
+    "q": "What is the event loop in JavaScript?",
+    "a": "The event loop is a mechanism that handles asynchronous code in JavaScript. It continuously checks the call stack and message queue to execute tasks in the correct order."
+  },
+  {
+    "q": "What is the difference between `null` and `undefined`?",
+    "a": "`null` is an assignment value representing no value or an empty object, while `undefined` is a type itself, indicating a variable has been declared but has not been assigned a value."
+  },
+  {
+    "q": "Explain the concept of 'hoisting' in JavaScript.",
+    "a": "Hoisting is the behavior in JavaScript where variable and function declarations are moved to the top of their containing scope during the compile phase, even before the code is executed."
+  },
+  {
+    "q": "What are Promises and how do they work in JavaScript?",
+    "a": "A Promise is an object representing the eventual completion (or failure) of an asynchronous operation. It has three states: pending, resolved (fulfilled), and rejected. Promises are used to handle asynchronous operations in a more manageable way compared to callbacks."
+  }
+]
+
+    },
+    {
+      "id": 6,
+      "title": "TypeScript for Beginners",
+      "description": "Learn TypeScript and its features.",
+      "duration": "6 hours",
+      "image": "https://picsum.photos/200/300?random",
+      "questions": [
+  {
+    "q": "What is TypeScript?",
+    "a": "TypeScript is a superset of JavaScript that adds optional static typing to the language. It compiles to plain JavaScript and helps catch errors at compile time, improving the development experience."
+  },
+  {
+    "q": "What are the benefits of using TypeScript over JavaScript?",
+    "a": "TypeScript provides type safety, better tooling (such as autocompletion and error checking), and more maintainable code. It also supports modern JavaScript features and can be transpiled to work in any JavaScript environment."
+  },
+  {
+    "q": "What are types in TypeScript?",
+    "a": "Types in TypeScript define the structure of data. They can be primitive types like `number`, `string`, `boolean`, or complex types like `arrays`, `objects`, or custom `interfaces`."
+  },
+  {
+    "q": "What is an interface in TypeScript?",
+    "a": "An interface in TypeScript defines a structure for objects. It specifies what properties and methods an object should have, helping with type-checking and improving code consistency."
+  },
+  {
+    "q": "What is the difference between `any` and `unknown` in TypeScript?",
+    "a": "`any` allows any type of value, effectively disabling type checking, whereas `unknown` is safer as it requires type checking before performing operations on the value."
+  }
+]
+
+    },
+    {
+      "id": 7,
+      "title": "Node.js Crash Course",
+      "description": "Quick intro to backend with Node.js.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random",
+      "questions": [
+  {
+    "q": "What is Node.js?",
+    "a": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to run JavaScript on the server-side and is designed for building scalable, fast network applications."
+  },
+  {
+    "q": "What is the event-driven architecture in Node.js?",
+    "a": "Node.js is based on an event-driven architecture, meaning it uses events and callbacks to handle asynchronous operations. It processes a large number of requests efficiently without blocking the execution thread."
+  },
+  {
+    "q": "What are modules in Node.js?",
+    "a": "Modules in Node.js are individual units of code that can be imported and used in different parts of an application. Node.js has built-in modules like `http`, `fs`, and `path`, and you can also create your own custom modules."
+  },
+  {
+    "q": "What is the difference between synchronous and asynchronous programming in Node.js?",
+    "a": "Synchronous programming in Node.js blocks the execution of the program until the current operation is complete, while asynchronous programming allows Node.js to handle multiple operations simultaneously without waiting for each one to finish."
+  },
+  {
+    "q": "How do you create an HTTP server in Node.js?",
+    "a": "You can create an HTTP server in Node.js using the `http` module. By calling `http.createServer()`, you can define request handling logic and start the server to listen for incoming requests."
+  }
+]
+
+    },
+    {
+      "id": 8,
+      "title": "Express.js in Practice",
+      "description": "Build REST APIs using Express.",
+      "duration": "5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 9,
+      "title": "MongoDB Basics",
+      "description": "Introduction to MongoDB and NoSQL.",
+      "duration": "4 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 10,
+      "title": "Full Stack with MERN",
+      "description": "Build full-stack apps using MERN.",
+      "duration": "12 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 11,
+      "title": "Git and GitHub",
+      "description": "Version control using Git and GitHub.",
+      "duration": "2.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 12,
+      "title": "Responsive Web Design",
+      "description": "Create mobile-friendly web pages.",
+      "duration": "7 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 13,
+      "title": "CSS Flexbox & Grid",
+      "description": "Master layout techniques with CSS.",
+      "duration": "4 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 14,
+      "title": "Bootstrap 5 Tutorial",
+      "description": "Learn Bootstrap components and layout.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 15,
+      "title": "RESTful APIs with Flask",
+      "description": "Build APIs with Python Flask framework.",
+      "duration": "6 hours",
+      "image": "https://picsum.photos/200/300?random"
+    }
+  ],
+  "css-courses": [
+    {
+      "id": 16,
+      "title": "CSS Fundamentals",
+      "description": "Learn the basics of CSS styling and layout.",
+      "duration": "4 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 17,
+      "title": "CSS Flexbox Deep Dive",
+      "description": "Master layout with CSS Flexbox.",
+      "duration": "3.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 18,
+      "title": "CSS Grid Mastery",
+      "description": "Build complex layouts using CSS Grid.",
+      "duration": "4 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 19,
+      "title": "Responsive Design with CSS",
+      "description": "Make your websites mobile-friendly.",
+      "duration": "5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 20,
+      "title": "Advanced CSS Animations",
+      "description": "Add smooth animations and transitions.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 21,
+      "title": "CSS Variables and Custom Properties",
+      "description": "Learn to write reusable and dynamic styles.",
+      "duration": "2.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 22,
+      "title": "SASS and SCSS Essentials",
+      "description": "Level up your CSS with preprocessors.",
+      "duration": "4 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 23,
+      "title": "Design Systems with CSS",
+      "description": "Build consistent UI using CSS patterns.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 24,
+      "title": "Utility-First CSS (Tailwind Basics)",
+      "description": "Get started with Tailwind CSS.",
+      "duration": "3.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 25,
+      "title": "CSS Tips and Tricks",
+      "description": "Boost your workflow with practical CSS tips.",
+      "duration": "2 hours",
+      "image": "https://picsum.photos/200/300?random"
+    }
+  ],
+  "js-courses": [
+    {
+      "id": 26,
+      "title": "JavaScript Essentials",
+      "description": "Start your JavaScript journey with core concepts.",
+      "duration": "5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 27,
+      "title": "JavaScript DOM Manipulation",
+      "description": "Learn to interact with the DOM using JS.",
+      "duration": "4 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 28,
+      "title": "Asynchronous JavaScript",
+      "description": "Master callbacks, promises, and async/await.",
+      "duration": "3.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 29,
+      "title": "JavaScript ES6+ Features",
+      "description": "Explore modern features like let, const, arrow functions, etc.",
+      "duration": "4 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 30,
+      "title": "JavaScript Events",
+      "description": "Handle user interaction through event listeners.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 31,
+      "title": "JavaScript Objects and Arrays",
+      "description": "Deep dive into data structures in JS.",
+      "duration": "3.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 32,
+      "title": "Functional Programming in JS",
+      "description": "Write cleaner code using map, filter, reduce, and more.",
+      "duration": "4 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 33,
+      "title": "Error Handling in JavaScript",
+      "description": "Learn to handle runtime errors effectively.",
+      "duration": "2.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 34,
+      "title": "JavaScript and the Browser",
+      "description": "Understand how JS works with the web browser.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 35,
+      "title": "JavaScript Best Practices",
+      "description": "Improve your coding with common patterns and practices.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    }
+  ],
+  "html-courses": [
+    {
+      "id": 36,
+      "title": "HTML Basics",
+      "description": "Learn the structure of web pages with HTML.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 37,
+      "title": "Semantic HTML",
+      "description": "Build accessible and meaningful web pages.",
+      "duration": "2.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 38,
+      "title": "Forms and Input",
+      "description": "Create user-friendly forms using HTML5.",
+      "duration": "3.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 39,
+      "title": "HTML Tables and Lists",
+      "description": "Display data using tables and organize content with lists.",
+      "duration": "2 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 40,
+      "title": "HTML Media Elements",
+      "description": "Embed audio, video, and images in your web pages.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 41,
+      "title": "HTML Links and Navigation",
+      "description": "Understand anchor tags and create navigation menus.",
+      "duration": "2.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 42,
+      "title": "HTML5 New Features",
+      "description": "Explore new semantic elements introduced in HTML5.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 43,
+      "title": "Responsive Layout with HTML",
+      "description": "Structure pages that work across devices.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 44,
+      "title": "Accessibility in HTML",
+      "description": "Learn best practices for making your pages accessible.",
+      "duration": "2.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 45,
+      "title": "Project: Build a Personal Webpage",
+      "description": "Apply your HTML knowledge in a mini-project.",
+      "duration": "4 hours",
+      "image": "https://picsum.photos/200/300?random"
+    }
+  ],
+  "all": [
+    {
+      "id": 46,
+      "title": "CSS Grid Mastery",
+      "description": "Build complex layouts using CSS Grid.",
+      "duration": "4 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 47,
+      "title": "HTML Basics",
+      "description": "Learn the structure of web pages with HTML.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 48,
+      "title": "JavaScript DOM Manipulation",
+      "description": "Learn to interact with the DOM using JS.",
+      "duration": "4 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 49,
+      "title": "Responsive Design with CSS",
+      "description": "Make your websites mobile-friendly.",
+      "duration": "5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 50,
+      "title": "Angular Basics",
+      "description": "Introduction to Angular framework.",
+      "duration": "5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 51,
+      "title": "JavaScript Best Practices",
+      "description": "Improve your coding with common patterns and practices.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 52,
+      "title": "HTML Media Elements",
+      "description": "Embed audio, video, and images in your web pages.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 53,
+      "title": "CSS Flexbox Deep Dive",
+      "description": "Master layout with CSS Flexbox.",
+      "duration": "3.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 54,
+      "title": "Git and GitHub",
+      "description": "Version control using Git and GitHub.",
+      "duration": "2.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 55,
+      "title": "JavaScript Essentials",
+      "description": "Start your JavaScript journey with core concepts.",
+      "duration": "5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 56,
+      "title": "Semantic HTML",
+      "description": "Build accessible and meaningful web pages.",
+      "duration": "2.5 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 57,
+      "title": "Bootstrap 5 Tutorial",
+      "description": "Learn Bootstrap components and layout.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 58,
+      "title": "React Essentials",
+      "description": "Learn the core concepts of React.",
+      "duration": "6 hours",
+      "image": "assets/course3.jpg"
+    },
+    {
+      "id": 59,
+      "title": "Advanced CSS Animations",
+      "description": "Add smooth animations and transitions.",
+      "duration": "3 hours",
+      "image": "https://picsum.photos/200/300?random"
+    },
+    {
+      "id": 60,
+      "title": "Project: Build a Personal Webpage",
+      "description": "Apply your HTML knowledge in a mini-project.",
+      "duration": "4 hours",
+      "image": "https://picsum.photos/200/300?random"
+    }
+  ]
 }

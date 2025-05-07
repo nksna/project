@@ -1,0 +1,29 @@
+<div class="card"  *ngIf="course">
+    
+
+        
+        
+            <img [src]="course.image" [alt]="course.title" class="card-image">
+            <h3> {{course.title}} </h3>
+            <p> {{course.description}}</p>
+            <span><strong>Duration:</strong> {{course.duration}} </span>
+            <p > </p>
+
+            <ul *ngFor="let q of course.questions;let i = index" class="qa-list">
+                <li class="question">
+                  <b>Question:</b> {{ q.q }}
+                  
+                </li>
+                <li class="answer"  (click)="toggeleAnswer(i)">
+                  <strong>Answer:</strong>
+                  <span *ngIf="q.isAnswer">{{ q.a }}</span>
+                  <span class="show-answer" *ngIf="!q.isAnswer" >[click to show Answer]</span> 
+                </li>
+              </ul>
+              
+
+
+        
+    
+   
+</div> 
