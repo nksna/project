@@ -1,1 +1,92 @@
-<p>course works!</p>
+<header>
+  <nav class="nav-bar">
+    <ul class="nav-links">
+        <li><a (click)="selectedCourse('html')">HTML</a></li>
+        <li><a (click)="selectedCourse('css')">CSS</a></li>
+        <li><a (click)="selectedCourse('js')">JAVASCRIPT</a></li>
+        <li><a (click)="selectedCourse('angular')">ANGULAR</a></li>
+    </ul>
+    <div>
+        <!-- <p>{{username}}</p> -->
+          
+        </div>
+
+  </nav>
+  
+
+
+
+</header>
+
+<div class="card"  *ngIf="isSelected">
+    <ul>
+
+        
+        <li *ngFor="let course of allCourse" (click)="viewCourse(course.id)" style="cursor: pointer;" >
+            <img [src]="course.image" [alt]="course.title" class="card-image">
+            <h3> {{course.title}} </h3>
+            <h3> {{course.id}} </h3>
+            <p> {{course.description}}</p>
+            <span><strong>Duration:</strong> {{course.duration}} </span>
+
+        </li>
+    </ul>
+   
+</div> 
+
+
+
+<div class="card"  *ngIf="currentCourse ==='angular'">
+
+    <ul>
+        <li *ngFor="let angularcourse of Angularcourses" (click)="angularCourse(angularcourse.id)" style="cursor: pointer;">
+            <img [src]="angularcourse.image" [alt]="angularcourse.title" class="card-image">
+            <h3> {{angularcourse.title}} </h3>
+            <p> {{angularcourse.description}}</p>
+            <span><strong>Duration:</strong> {{angularcourse.duration}} </span>
+
+        </li>
+    </ul>
+   
+</div>
+
+<div class="card"  *ngIf="currentCourse ==='css'" >
+    <ul>
+        <li *ngFor="let course of CssCourses" (click)="cssViewCourse(course.id)" style="cursor: pointer;">
+            <img [src]="course.image" [alt]="course.title" class="card-image">
+            <h3> {{course.title}} </h3>
+            <p> {{course.description}}</p>
+            <span><strong>Duration:</strong> {{course.duration}} </span>
+
+        </li>
+    </ul>
+</div>
+
+
+<div class="card"  *ngIf="currentCourse ==='js'">
+    <ul>
+        <li *ngFor="let course of jsCourse"  (click)="jsViewCourse(course.id)" style="cursor: pointer;">
+            <img [src]="course.image" [alt]="course.title" class="card-image">
+            <h3> {{course.title}} </h3>
+            <p> {{course.description}}</p>
+            <span><strong>Duration:</strong> {{course.duration}} </span>
+            
+
+        </li>
+    </ul>
+</div>
+
+<div class="card"  *ngIf="currentCourse ==='html'">
+    <ul>
+
+        
+        <li *ngFor="let course of HtmlCourse">
+            <img [src]="course.image" [alt]="course.title" class="card-image">
+            <h3> {{course.title}} </h3>
+            <p> {{course.description}}</p>
+            <span><strong>Duration:</strong> {{course.duration}} </span>
+
+        </li>
+    </ul>
+   
+</div> 
