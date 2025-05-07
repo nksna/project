@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SideNavBarComponent {
 
+  userrole:any
+  constructor(){
+    this.userrole=localStorage.getItem('key')
+    console.log(this.userrole)
+  }
 }

@@ -8,10 +8,10 @@
   height: 100vh;
   display: flex;
   background-color: #0f0f0f;
-  /* background-image: url(../../../assets/backGround.jpg); */
-  background-image: url(../../../assets/header-background.jpg);
+  background-image: url(../../../assets/backGround.jpg);
+  /* background-image: url(../../../assets/header-background.jpg); */
   /* background-repeat: no-repeat; */
-  background-size: cover;
+  /* background-size: cover; */
 }
  .left-side {
   flex: 1;
@@ -99,4 +99,10 @@ button:hover {
   background-color: #00dcdc;
 }
 
+span{
+  color: red;
+}
 
+.input-error {
+  border: 2px solid red;
+}
